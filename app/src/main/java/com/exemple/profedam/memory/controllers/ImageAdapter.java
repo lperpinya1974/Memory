@@ -17,7 +17,8 @@ public class ImageAdapter extends BaseAdapter {
 
     private Context mContext;
     private int numColumnas, anchoColumna, alturaColumna;
-    private Integer[] imatges = {
+    private Partida partida;
+   /* private Integer[] imatges = {
             R.drawable.c0, R.drawable.c1,
             R.drawable.c2, R.drawable.c3,
             R.drawable.c4, R.drawable.c5,
@@ -27,17 +28,21 @@ public class ImageAdapter extends BaseAdapter {
 
 
     };
+    */
 
     public ImageAdapter(Context c, Partida p) {
 
         mContext = c;
-
+        this.partida = p;
 
     }
 
 
     public int getCount() {
-        return imatges.length;
+        /* Devuelve el número de cartas a cargar o el número
+        de elementos que tiene que mostrar el gridView
+         */
+        return partida.getNumeroCartes();
     }
 
     public Object getItem(int position) {
@@ -56,7 +61,7 @@ public class ImageAdapter extends BaseAdapter {
             imageView.setLayoutParams(new GridView.LayoutParams(280,320));
             imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
             imageView.setPadding(8, 8, 8, 8);
-            imageView.setImageResource(imatges[position]);
+            imageView.setImageResource(partida.getLlistaCartes().get(position).getFrontImage());
         } else {
             imageView = (ImageView) convertView;
         }

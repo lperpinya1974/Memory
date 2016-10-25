@@ -22,7 +22,9 @@ public class GeneralListener implements AdapterView.OnItemClickListener{
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-             Toast.makeText (tauler, "position" + position, Toast.LENGTH_LONG).show();
+
+             Toast.makeText (tauler, "position" + position, Toast.LENGTH_SHORT).show();
+             view.setVisibility(View.INVISIBLE);
             }
     }
 
