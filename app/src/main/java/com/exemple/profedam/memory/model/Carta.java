@@ -21,4 +21,9 @@ public class Carta {
     public int getFrontImage() {
         return frontImage;
     }
+
+    public int getImage() {
+
+        //TODO cal tornar la frontImage o la BackImage de la carta segons pertoqui
+    }
 }

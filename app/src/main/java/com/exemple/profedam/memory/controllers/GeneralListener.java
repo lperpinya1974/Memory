@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
+import com.exemple.profedam.memory.model.Carta;
 
 
 /**
@@ -25,6 +26,10 @@ public class GeneralListener implements AdapterView.OnItemClickListener{
 
              Toast.makeText (tauler, "position" + position, Toast.LENGTH_SHORT).show();
              view.setVisibility(View.INVISIBLE);
+
+
+        Carta cartaSeleccionada = tauler.getPartida().getLlistaCartes().get(position);
+
             }
     }
 
