@@ -43,7 +43,7 @@ public class Partida {
         }
 
 
-    public ArrayList getLlistaCartes     {
+    public ArrayList getLlistaCartes()     {
             return llistaCartes;
         }
 
