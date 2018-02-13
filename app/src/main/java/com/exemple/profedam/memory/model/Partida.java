@@ -36,8 +36,8 @@ public class Partida {
         this.numeroCartes = numeroCartes;
         llistaCartes = new ArrayList();
 
-        for (int cont = 0; cont <= 2; cont++) {
-            for (int cont1 = 0; cont1 <= numeroCartes / 2-1; cont1++) {
+        for (int cont = 0; cont < 2; cont++) {
+            for (int cont1 = 0; cont1 <=( numeroCartes / 2)-1; cont1++) {
                 llistaCartes.add(new Carta(totalCartes[cont1]));
 
             }
