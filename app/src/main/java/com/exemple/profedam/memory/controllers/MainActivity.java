@@ -12,8 +12,7 @@ public class MainActivity extends Activity {
 
     private GridView gv;
     private Partida partida;
-
-
+    private ImageAdapter adapter;
     public GridView getGv() {
         return gv;
     }
@@ -41,7 +40,7 @@ public class MainActivity extends Activity {
         gv = (GridView) findViewById(R.id.gridViewMemory);
 
         this.partida = new Partida(12);
-        ImageAdapter adapter = new ImageAdapter(this, partida);
+        adapter = new ImageAdapter(this, partida);
         GeneralListener listener = new GeneralListener(this);
         gv.setAdapter(adapter);
         gv.setOnItemClickListener(listener);
@@ -52,6 +51,12 @@ public class MainActivity extends Activity {
             }
         });*/
     }
+    public void refrescarTablero()
+    {
+        gv.setAdapter(adapter);
+        gv.refreshDrawableState();
+    }
+
 }
 
 

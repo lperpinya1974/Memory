@@ -25,10 +25,13 @@ public class GeneralListener implements AdapterView.OnItemClickListener{
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
              Toast.makeText (tauler, "position" + position, Toast.LENGTH_SHORT).show();
-             view.setVisibility(View.INVISIBLE);
+            // view.setVisibility(View.INVISIBLE);
 
 
         Carta cartaSeleccionada = tauler.getPartida().getLlistaCartes().get(position);
+        cartaSeleccionada.girar();
+        tauler.refrescarTablero();
+
 
 
             }
