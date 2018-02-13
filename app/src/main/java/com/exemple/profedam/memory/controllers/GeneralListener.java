@@ -30,6 +30,7 @@ public class GeneralListener implements AdapterView.OnItemClickListener{
 
         Carta cartaSeleccionada = tauler.getPartida().getLlistaCartes().get(position);
 
+
             }
     }
 

@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Memory.iml" filepath="$PROJECT_DIR$/.idea/Memory.iml" />
+      <module fileurl="file://E:\Android\Memory\.idea\Memory.iml" filepath="E:\Android\Memory\.idea\Memory.iml" />
       <module fileurl="file://C:\Users\profe\AndroidStudioProjects\Memory\Memory.iml" filepath="C:\Users\profe\AndroidStudioProjects\Memory\Memory.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\Android\Memory\app\app.iml" filepath="E:\Android\Memory\app\app.iml" />
     </modules>
   </component>
 </project>

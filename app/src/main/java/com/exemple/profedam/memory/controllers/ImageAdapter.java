@@ -62,7 +62,7 @@ public class ImageAdapter extends BaseAdapter {
             imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
             imageView.setPadding(8, 8, 8, 8);
             imageView.setImageResource(imatges[position]);
-             imageView.setImageResource(partida.getLlistaCartes().get(position).getFrontImage());
+             imageView.setImageResource(partida.getLlistaCartes().get(position).getImage());
         } else {
             imageView = (ImageView) convertView;
         }
