@@ -24,7 +24,19 @@ public class Carta {
 
     public int getImage() {
 
-        //TODO cal tornar la frontImage o la BackImage de la carta segons pertoqui
-        return 0;
+        int image;
+        switch(estat) {
+            case BACK:
+                image = backImage;
+            case FRONT:
+                image = frontImage;
+
+            default:
+                image = backImage;
+
+        }
+
+        return image;
+
     }
 }

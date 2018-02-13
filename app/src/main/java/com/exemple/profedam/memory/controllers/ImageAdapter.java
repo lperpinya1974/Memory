@@ -2,6 +2,7 @@ package com.exemple.profedam.memory.controllers;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +19,7 @@ public class ImageAdapter extends BaseAdapter {
     private Context mContext;
     private int numColumnas, anchoColumna, alturaColumna;
     private Partida partida;
-    private Integer[] imatges = {
+  /*  private Integer[] imatges = {
             R.drawable.c0, R.drawable.c1,
             R.drawable.c2, R.drawable.c3,
             R.drawable.c4, R.drawable.c5,
@@ -28,6 +29,7 @@ public class ImageAdapter extends BaseAdapter {
 
 
     };
+    */
 
 
     public ImageAdapter(Context c, Partida p) {
@@ -61,11 +63,13 @@ public class ImageAdapter extends BaseAdapter {
             imageView.setLayoutParams(new GridView.LayoutParams(280,320));
             imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
             imageView.setPadding(8, 8, 8, 8);
-            imageView.setImageResource(imatges[position]);
-             imageView.setImageResource(partida.getLlistaCartes().get(position).getImage());
+            //imageView.setImageResource(imatges[position]);
+            imageView.setImageResource(partida.getLlistaCartes().get(position).getImage());
+            Log.i("Prova", "Test" + position);
         } else {
             imageView = (ImageView) convertView;
         }
+
 
         return imageView;
     }
